@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<style>
+
+  /* 主.配色 */
+  .MyTextcolor1 {    color: #A0B1B7;  }
+  .MyTextcolor2 {    color: #757f81;  }
+  .MyTextcolor3 {    color: #E8D56F;  }
+  .MyColorMatching1 {    color: #A26851;  }
+  .MyColorMatching2 {    color: #C18963;  }
+
+  .MyAboutUs {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 水平居中 */
+  }
+
+  .MyFrame24 {
+  background-image: url(../_image/Frame24.png);
+  background-position-x: -120;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  }
+
+  /* 顧客圖片 */
+  .MyFrame11 {
+    margin-top: 20px;
+    object-fit: cover;
+    height: 160px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+  }
+
+  /* 顧客圖片-圖片放大效果 */
+  .MyFrame11{transform:scale(1,1);transition: all 0.5s ease-out;}
+  .MyFrame11:hover{transform:scale(1.1,1.1);}
+
+
+
+</style>
+
+
+
+<body>
+    
+
+
+<!-- 導覽列 -->
+<nav class="sticky-top navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    <img style="width: 180px;" class="navbar-brand" src="../_image/LOGO.png" alt="">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        
+        <div class="navbar-nav flex-grow-1">
+          <!-- 首頁 -->
+          <a class="nav-link active" aria-current="page" href="./home.html"> 關於我們 </a>
+          <a class="nav-link" href="./rooms.html"> 房型介紹 </a>
+          <a class="nav-link" href="./QA.html"> Q & A </a>
+          <!-- <a class="nav-link" href="./Content.html"> 聯絡我們 </a> -->
+        </div>
+        <a href="./form.html">
+        <button type="button" class="btn btn-outline-warning">預約服務</button>
+        </a>
+        </div>
+    </div>
+  </nav>
+
+<!-- 輪播圖 -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../_image/輪播圖-01.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>給予貓咪最安心的環境</h2>
+        <p>舒適床鋪、安全區域，工作人員細心照顧，讓貓咪愉快度假。</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../_image/輪播圖-02.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>到府照顧最安心的保母</h2>
+        <p>專業保母個人化服務，定時喂食、清理、陪伴，確保毛孩安全快樂。</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../_image/輪播圖-03.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>每個毛孩都是家長的寶貝</h2>
+        <p>我們對每隻貓咪都充滿愛心，提供像家一樣的關愛和照顧。</p>
+      </div>
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div></div>
+
+<!-- 營業時間 -->
+<div class="container mb-2 mt-3">
+  <div class="row">
+    <div class="col">
+        <br><br>
+        <div style="border-left: 10px solid #F5F783;"><h3>營業時間</h3></div>
+        <div class="col MyTextcolor1"><h1 class="display-3"  style="font-weight: bold;">全年無休</h1></div>
+        <div class="col"><h5>周一至周五</h5></div>
+        <div class="col"><h5>AM 10:00 ~ PM 21:00</h5></div>
+    </div>
+  </div>
+  <br><br><br>
+</div>
+
+<!-- ABOUT US -->
+<div style="background-color: aliceblue;">
+
+  <div class="container-sm">
+    <br><br>
+    <img src="../_image/黑貓 (4).jpg" class="rounded mx-auto d-block" style="width: 150px; clip-path: circle(50% at 50% 50%);">
+    <h1 class="MyAboutUs">ABOUT US</h1>
+    <h5  class="MyAboutUs MyColorMatching1">用心照顧每一位毛孩，讓貓主人們安心出行。</h5>
+    <p class="MyTextcolor1">歡迎來到「歐米旅館」，我們是在板橋區獨一無二的貓咪旅館，為所有貓主人提供安心的選擇。我們提供優質客房和舒適設施，以及溫馨貼心的照顧服務，讓每位貓貴賓都能享受一流的住宿體驗。作為台北首家專為貓咪打造的旅館，我們深知貓咪的敏感特性，致力於提供專屬於貓咪的完美住宿體驗。無論您外出度假還是出差，讓您的愛貓在「貓之森」度過難忘的旅程。</p>
+    <p class="MyTextcolor1">我們深知貓咪情緒的敏感和易緊張的特性，因此我們的每一項設計都經過細心考量，從客房設計到照顧服務，都專注於貓咪的需求。</p>
+    <br><br>
+  </div>
+</div>
+
+<!-- 顧客圖片 -->
+<br><br><br><h1 class="MyAboutUs">住戶回顧</h1>
+<div class="container">
+    <div class="row">
+        <img class="MyFrame11 col-md-2" src="../_image/homeM/homeM (3).jpg">
+        <img class="MyFrame11 col-md-6" src="../_image/homeM/homeM (1).jpg">
+        <img class="MyFrame11 col-md-4" src="../_image/homeM/homeM (2).jpg">
+        <img class="MyFrame11 col-md-4" src="../_image/homeM/homeM (7).jpg">
+        <img class="MyFrame11 col-md-6" src="../_image/homeM/homeM (4).jpg">
+        <img class="MyFrame11 col-md-2" src="../_image/homeM/homeM (5).jpg">
+        <img class="MyFrame11 col-md-8" src="../_image/homeM/homeM (6).jpg">
+        <img class="MyFrame11 col-md-4" src="../_image/homeM/homeM (8).jpg">
+
+    </div>
+
+</div>
+
+<!-- 聯絡資訊 -->
+<div class="container mt-5 MyFrame24">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div><p class="MyTextcolor1"><i class="bi bi-telephone-fill"></i> 電話：(02)2666-1888</p></div>
+      <div><p class="MyTextcolor1"><i class="bi bi-map"></i> 地址：220新北市板橋區中山路一段161號</p></div>
+      <div><p class="MyTextcolor1"><i class="bi bi-envelope"></i> E-Mail：omi161@gmail.com</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- 插入Google地圖 -->
+<div class="container-fluid mt-5" style="text-align: center;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.643010436491!2d121.46534619999998!3d25.012243599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a81ed52cbcad%3A0xad138206f5ebe75c!2zMjIw5paw5YyX5biC5p2_5qmL5Y2A5Lit5bGx6Lev5LiA5q61MTYx6Jmf!5e0!3m2!1szh-TW!2stw!4v1716951123411!5m2!1szh-TW!2stw"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+</div>
+
+<!-- 網頁底說明 -->
+<div class="container-fluid d-flex justify-content-between" style="height: 50px; vertical-align: baseline;">
+  <img src="../_image/LOGO2.png" alt="LOGO" style="height: 30px;">
+  <p class="lh-base" style="color: #81868C;">營業時間｜24小時褓母駐館｜每日10:00~21:00 寵物可進出館｜每日14:00~19:00 開放參觀｜</p>
+</div>
+
+</body>
+
+</html>

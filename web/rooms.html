@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<style>
+  /* 主.配色 */
+  .MyTextcolor1 {    color: #A0B1B7;  }
+  .MyTextcolor2 {    color: #BED7DC;  }
+  .MyTextcolor3 {    color: #E8D56F;  }
+  .MyColorMatching1 {    color: #A26851;  }
+  .MyColorMatching2 {    color: #C18963;  }
+
+  .Myroomsimg {
+    object-fit: cover;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 600px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .container:hover .Myoverlay {
+    opacity: 1;
+  }
+
+  .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+  .Myoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto%;
+  width: auto%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(216, 225, 225,0.2);
+  }
+
+  .Mytext {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bottom-right {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  color: white;
+  }
+
+
+  div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+  /* 優質設備圖片格式 */
+  div.scroll-container img {
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+  }
+
+  /* 圖片放大效果 */
+  .figure img{transform:scale(1,1);transition: all 0.5s ease-out;}
+  .figure img:hover{transform:scale(1.1,1.1);}
+
+  /* TOP 位置 */
+  #reddiv {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+  }
+
+
+</style>
+
+
+
+<body>
+
+
+<!-- 導覽列 -->
+<nav class="sticky-top navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    <img style="width: 180px;" class="navbar-brand" src="../_image/LOGO.png" alt="">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        
+        <div class="navbar-nav flex-grow-1">
+          <!-- 首頁 -->
+          <a class="nav-link" href="./home.html"> 關於我們 </a>
+          <a class="nav-link active" aria-current="page" href="./rooms.html"> 房型介紹 </a>
+          <a class="nav-link" href="./QA.html"> Q & A </a>
+          <!-- <a class="nav-link" href="./Content.html"> 聯絡我們 </a> -->
+        </div>
+        <a href="./form.html">
+        <button type="button" class="btn btn-outline-warning">預約服務</button>
+        </a>
+        </div>
+    </div>
+  </nav>
+
+<!-- 房型介紹 -->
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-md container">
+      <img src="../_image/room (1).jpg" class="Myroomsimg">
+      <div class="Myoverlay">
+        <a href="#Rooms1">
+          <div class="Mytext">奢華房<br>$2,600/日</div>
+          <div class="bottom-right">+ More...</div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md container">
+      <img src="../_image/room (2).jpg" class="Myroomsimg">
+      <div class="Myoverlay">
+        <a href="#Rooms2">
+          <div class="Mytext">高級房<br>$1,800/日</div>
+          <div class="bottom-right">+ More...</div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md container">
+      <img src="../_image/room (3).jpg" class="Myroomsimg">
+      <div class="Myoverlay">
+        <a href="#Rooms3">
+          <div class="Mytext">經濟房<br>$800/日</div>
+          <div class="bottom-right">+ More...</div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- 補充各房型說明 -->
+<div style="background-color: #C18963;">
+  <br><br>
+
+  <!-- 房型1 -->
+  <div class="container md-5" id="Rooms1">
+    <div class="row mt-5">
+      <div class="col-md"><img class="img-fluid" src="../_image/room-1-1.png" style="height: 500px;"></div>
+      <div class="col-md">
+        <h1>奢華房</h1>
+        <p class="text-start"><i class="bi bi-star-fill"></i> 精心設計的豪華空間，配有舒適的大型貓咪床和豪華貓咪家具</p>
+        <p class="text-start"><i class="bi bi-star-fill"></i> 專為追求高品質與舒適度的貓咪設計的房型，包括特製的貓咪玩具和娛樂設施</p>
+        <p class="text-start"><i class="bi bi-star-fill"></i> 專屬貓咪 SPA 服務，提供按摩和特殊護理，以確保貓咪的身心健康</p>
+        <p class="text-start"><i class="bi bi-star-fill"></i> 多處可躲藏，貓咪不緊張</p>
+        <p class="text-start"><i class="bi bi-star-fill"></i> 24小時監視器，讓家長隨時觀看貓咪狀態不擔心</p>
+        <p class="text-start"><i class="bi bi-star-fill"></i> 可入住的貓咪數量1-8隻</p>
+        <p class="text-start"><i class="bi bi-star-fill"></i> 獨立空間，適合多貓家庭</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- 房型2 -->
+    <div class="container md-5" id="Rooms2">
+      <div class="row mt-5">
+        <div class="col-md"><img class="img-fluid" src="../_image/room-1-2.png" style="height: 500px;"></div>
+        <div class="col-md">
+          <h1>高級房</h1>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 寬敞舒適的空間，配有高品質的貓咪床和玩具</p>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 專為享受舒適休憩的貓咪而設計的環境，提供安靜和放鬆的氛圍</p>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 貼心的貓咪餐食服務，提供新鮮美味的貓咪美食，滿足貓咪的味蕾</p>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 合適的垂直高度，老貓、幼貓皆可安心躲藏玩耍</p>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 24小時監視器，讓家長隨時觀看貓咪狀態不擔心</p>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 可入住的貓咪數量1-4隻</p>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 少量貓咪家庭非常歡迎</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 房型3 -->
+    <div class="container md-5"  id="Rooms3">
+      <div class="row mt-5">
+        <div class="col-md"><img class="img-fluid" src="../_image/room-1-3.png" style="height: 500px;"></div>
+        <div class="col-md">
+          <h1>經濟房</h1>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 簡潔舒適的房間，提供基本的貓咪床和玩具</p>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 為注重實惠但不想妥協品質的貓咪而設計，提供舒適的休息環境</p>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 提供標準貓咪餐食，確保貓咪的營養均衡和食物安全</p>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 舒適燈光與放鬆環境</p>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 早晚回報飲食及如廁狀態</p>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 可入住的貓咪數量1-2隻</p>
+          <p class="text-start"><i class="bi bi-star-fill"></i> 單貓家庭的福音</p>
+        </div>
+      </div>
+    </div>    
+
+  <br><br><br>
+
+
+</div>
+
+
+<!-- 貓咪用品介紹 -->
+<div style="background-color: #C18963;">
+
+  <div class="container">
+    <h5>給毛孩子最優質的設備</h5>
+    <div class="scroll-container">
+      <figure class="figure">
+        <img src="../_image/Supplies-1.jpg" class="figure-img img-fluid rounded" id="pic">
+        <figcaption class="figure-caption">高級木架碗</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="../_image/Supplies-2.jpg" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">美味肉泥</figcaption>
+      </figure>
+      <figure class="figure pic">
+        <img src="../_image/Supplies-3.jpg" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">舒適貓砂盆</figcaption>
+      </figure>
+      <figure class="figure pic">
+        <img src="../_image/Supplies-4.jpg" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">優質貓鏟子</figcaption>
+      </figure>
+      <figure class="figure pic">
+        <img src="../_image/Supplies-5.jpg" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">美味豆腐砂</figcaption>
+      </figure>
+      <figure class="figure pic">
+        <img src="../_image/Supplies-6.jpg" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">營養貓糧</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="../_image/Supplies-7.jpg" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">好吃好吃罐罐</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="../_image/Supplies-8.jpg" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">陶瓷飲水機</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="../_image/Supplies-9.jpg" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">逗趣貓玩具</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="../_image/Supplies-10.jpg" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">耐玩貓紙箱</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="../_image/Supplies-12.jpg" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">節能清淨機</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="../_image/Supplies-13.jpg" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">306度寵物攝影機</figcaption>
+      </figure>
+
+
+    </div>
+  </div>
+
+</div>
+
+<div style="background-color: #C18963;"><br><br><br></div>
+
+<!-- 網頁底說明 -->
+<div class="container-fluid d-flex justify-content-between" style="height: 50px; vertical-align: baseline; ">
+  <img src="../_image/LOGO2.png" alt="LOGO" style="height: 30px;">
+  <p class="lh-base" style="color: #81868C;">營業時間｜24小時褓母駐館｜每日10:00~21:00 寵物可進出館｜每日14:00~19:00 開放參觀｜</p>
+</div>
+
+<!-- TOP 元素 -->
+<a href="#">
+<div id="reddiv"><img src="../_image/TOP.png" style="width: 80px;"></div>
+</a>
+
+    
+</body>
+
+</html>

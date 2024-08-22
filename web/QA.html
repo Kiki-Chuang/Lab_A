@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+</head>
+
+<style>
+  body{
+    background-image: url(../_image/BG.jpg)
+  }
+
+</style>
+
+
+<body>
+
+
+
+<!-- 導覽列 -->
+<nav class="sticky-top navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    <img style="width: 180px;" class="navbar-brand" src="../_image/LOGO.png" alt="">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        
+        <div class="navbar-nav flex-grow-1">
+          <!-- 首頁 -->
+          <a class="nav-link" href="./home.html"> 關於我們 </a>
+          <a class="nav-link" href="./rooms.html"> 房型介紹 </a>
+          <a class="nav-link active" aria-current="page" href="./QA.html"> Q & A </a>
+          <!-- <a class="nav-link" href="./Content.html"> 聯絡我們 </a> -->
+        </div>
+        <a href="./form.html">
+        <button type="button" class="btn btn-outline-warning">預約服務</button>
+        </a>
+        </div>
+    </div>
+  </nav>
+
+
+<!-- 標題 -->
+
+<div class="container mt-5"><h1>Q & A | 常見問題</h1></div>
+
+<!-- 問答集|手風琴格式 -->
+<div class="container accordion  mt-5" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        1.入住退房時間
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>營業時間內皆可入住<br>
+          逾下午15:00 後則視為續住第二日<br>
+          最短住宿時長為一晚，最長住宿時長為連續兩週，長期住宿可視情況而定，需提前與管理員溝通。
+          營業時間：AM 9:00 ~ PM 21:00</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        2.預訂和取消政策
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>預訂需提前至少 8小時。<br>
+          預定時間7日前取消，全額退費。<br>
+          預定時間3日前取消，退費50%。<br>
+          預定時間1日前取消，退費20%，否則將不退還訂金。</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        3.收費標準
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>基本住宿費用入住時收取，附加服務費用另計，如美容服務、特別飲食需求等。</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseThree">
+        4.健康要求
+      </button>
+    </h2>
+    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>所有入住貓咪必須提供最新的疫苗接種記錄，包括狂犬病、貓瘟熱和貓鼻炎等基本疫苗。貓咪必須符合設施所訂定的健康檢查標準，並且不得患有傳染病或傳染蟲。
+          貓咪必須在過去 12 個月內完成最新的疫苗接種，並提供相應的疫苗接種記錄。</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseThree">
+        5.緊急情況處理
+      </button>
+    </h2>
+    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>提供緊急聯繫人信息，包括主人及其他緊急聯繫人的姓名、電話號碼和地址；緊急情況下，我們將立即聯繫貓咪主人，並根據情況採取適當的行動。</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+        6.責任聲明
+      </button>
+    </h2>
+    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>客人需簽署一份責任聲明，承擔貓咪可能對他人或物品造成的任何損害或傷害。</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapseThree">
+        7.安全保障
+      </button>
+    </h2>
+    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>定期進行設施檢查，確保設施的安全性和舒適性；提供適當的消防和緊急設備，以應對可能出現的緊急情況。</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<br><br><br>
+
+<!-- 網頁底說明 -->
+<div class="container-fluid d-flex justify-content-between" style="height: 50px; vertical-align: baseline;">
+  <img src="../_image/LOGO2.png" alt="LOGO" style="height: 30px;">
+  <p class="lh-base" style="color: #81868C;">營業時間｜24小時褓母駐館｜每日10:00~21:00 寵物可進出館｜每日14:00~19:00 開放參觀｜</p>
+</div>
+
+    
+</body>
+
+</html>
